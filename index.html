@@ -6,124 +6,113 @@
     <title>Saumya Tripathi | DevOps Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: "Poppins", sans-serif;
-            background-color: #f4f8fc;
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
             color: #343a40;
-            margin: 0;
-            padding: 0;
         }
         .hero {
-            height: 100vh;
+            height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #5a3fdb, #2f8efc);
+            background-image: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .hero-content {
             text-align: center;
-            padding: 0 1rem;
-        }
-        .hero-content h1 {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        .hero-content p {
-            font-size: 1.25rem;
-        }
-        .btn-custom {
-            background-color: #ffffff;
-            color: #2f8efc;
-            font-weight: 600;
-            border-radius: 25px;
-            padding: 0.75rem 2rem;
-            transition: all 0.3s ease;
-        }
-        .btn-custom:hover {
-            background-color: #e0e7ff;
-            transform: translateY(-3px);
-        }
-        .about-section, .skills {
-            padding: 5rem 1rem;
-            text-align: center;
-        }
-        .about-section {
-            background-color: #ffffff;
         }
         .skills {
-            background-color: #eef3fa;
+            padding: 4rem 0;
+            text-align: center;
+            background-color: #f7f9fc;
         }
         .skill-icon {
-            font-size: 4rem;
-            color: #5a3fdb;
+            font-size: 3.5rem;
+            color: #2575fc;
             margin-bottom: 1rem;
+        }
+        .about-section {
+            padding: 4rem 2rem;
+            background-color: #ffffff;
+            text-align: center;
         }
         .footer {
             background-color: #343a40;
             color: white;
-            padding: 1.5rem;
             text-align: center;
+            padding: 1rem 0;
         }
-        .footer a {
-            color: #9ecbff;
-            text-decoration: none;
+        .btn-custom {
+            background-color: white;
+            color: #2575fc;
+            font-weight: 500;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            transition: 0.3s;
         }
-        .footer a:hover {
-            text-decoration: underline;
+        .btn-custom:hover {
+            background-color: #f7f9fc;
+            color: #0056b3;
+            transform: scale(1.05);
         }
-        .profile-img-placeholder {
-            width: 150px;
-            height: 150px;
-            background-color: #e0e7ff;
-            border-radius: 50%;
-            margin: 2rem auto;
-        }
+        .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 
 <div class="hero">
     <div class="hero-content">
-        <div class="profile-img-placeholder"></div>
+        <img src="saumya.png" alt="Saumya Tripathi" class="profile-img">
         <h1 class="display-3">Saumya Tripathi</h1>
-        <p>DevOps Engineer at Hewlett Packard Enterprise (HPE)</p>
-        <a href="#about" class="btn btn-custom mt-3">Explore More</a>
+        <p class="lead">DevOps Engineer at Hewlett Packard Enterprise (HPE)</p>
+        <a href="#about" class="btn btn-custom btn-lg mt-4">Learn More</a>
     </div>
 </div>
 
-<section id="about" class="about-section">
+<section id="about" class="about-section container">
     <h2>About Me</h2>
-    <p>I am Saumya Tripathi, an experienced DevOps Engineer specializing in Kubernetes, container orchestration, and OpenShift. At HPE, I develop efficient, secure, and scalable infrastructure solutions to streamline continuous integration and deployment.</p>
+    <p class="lead">I am Saumya Tripathi, a DevOps Engineer specializing in Kubernetes, Containers, and OpenShift technologies. With experience at HPE, I contribute to building and maintaining highly scalable, secure, and efficient infrastructure solutions that enhance continuous integration and deployment practices.</p>
 </section>
 
-<section id="skills" class="skills">
-    <h2>Core Skills</h2>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <i class="fab fa-docker skill-icon"></i>
-                <h4>Containers & Docker</h4>
-                <p>Expert in containerization, Dockerfile creation, optimization, and orchestration.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-cloud skill-icon"></i>
-                <h4>Kubernetes</h4>
-                <p>Specialized in managing scalable Kubernetes clusters, automating deployments and ensuring reliability.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-cogs skill-icon"></i>
-                <h4>OpenShift</h4>
-                <p>Proficient in enterprise-level OpenShift deployments, CI/CD pipelines, and security management.</p>
-            </div>
+<section id="skills" class="skills container">
+    <h2 class="mb-5">Core Technical Skills</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <i class="fab fa-docker skill-icon"></i>
+            <h5>Containers & Docker</h5>
+            <p>Containerization expertise, Dockerfile optimization, and container orchestration.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-cloud skill-icon"></i>
+            <h5>Kubernetes</h5>
+            <p>Cluster management, deployment automation, scalability and high availability solutions.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-cogs skill-icon"></i>
+            <h5>OpenShift</h5>
+            <p>Enterprise-grade Kubernetes management, secure app deployment, and CI/CD workflows.</p>
         </div>
     </div>
 </section>
 
 <footer class="footer">
-    <p>&copy; 2024 Saumya Tripathi | DevOps Engineer at HPE | <a href="mailto:saumya@example.com">Contact Me</a></p>
+    <p>&copy; 2024 Saumya Tripathi | DevOps Engineer at HPE | <a href="mailto:saumya@example.com" style="color:#fff;">Contact Me</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
